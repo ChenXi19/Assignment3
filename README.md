@@ -4,4 +4,4 @@ Numerical method has been widely used as an approximation of the exact solution 
 ## Introduction
 The method normally used to estimate the difference between the real solution and the Euler solution is generally based on the Taylor's Theorem and the Meanvalue Theorem, which are<br>
 * The Taylor's Theorem. Let k be an interger and let f(x) be k times differentiable at the point x=a, then there exists a function h(x) such that:<br>
-$$f(x)=f(a)+f'(a)(x-a)+frac{f"(a)(x-a)^2}{2!}$$
+$$ f(x)=f(a)+f'(a)(x-a)+frac{f"(a)(x-a)^2}{2!} $$
