@@ -71,7 +71,7 @@ with the error being<br>
 ![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/fricton10%20error.png)
 
 #### case 2: N=100
-![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction100.png)
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction100.png)<br>
 with the error being<br>
 ![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction100error.png)<br>
 
