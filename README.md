@@ -23,7 +23,9 @@ The numerical approach to this problem is based on the Taylor expansion for v(t)
 ![](http://latex.codecogs.com/gif.latex?v%28t%29%3Dv%280%29&plus;v%27%280%29t&plus;%5Cfrac%7Bv%27%27%28t%29%7D%7B2%21%7Dt%5E2&plus;...)<br>If we take t to be small enough, it is always a good approximation to simply consider only the first two terms, leaving us with<br>
 ![](http://latex.codecogs.com/gif.latex?v%28t%29%5Capprox%20v%280%29&plus;v%27%280%29t)<br>
 Similarlly by expanding v(t) at time t, we can esitimate the value ![](http://latex.codecogs.com/gif.latex?v%28t&plus;%5CDelta%20t%29) at ![](http://latex.codecogs.com/gif.latex?t%27%3Dt&plus;%5CDelta%20t) to be,<br>
-![](http://latex.codecogs.com/gif.latex?v%28t&plus;%5CDelta%20t%29%3Dv%28t%29&plus;v%27%28t%29%5CDelta%20t)
+![](http://latex.codecogs.com/gif.latex?v%28t&plus;%5CDelta%20t%29%3Dv%28t%29&plus;v%27%28t%29%5CDelta%20t)<br>
+Therefore by repeatedly applying this method, we can estimate the value of the velcity at time ![](http://latex.codecogs.com/gif.latex?t%3D%5CDelta%20t%2C2%5CDelta%20t%2C3%5CDelta%20t...)<br>
+From latter discussion, we will see that the Euler solution of the free falling problem is actually the exact solution, which is the result of the first derivative of v(t) being constant or equally the second derivative of it being zero.
 ### estimation of errors based on Taylor's Theorem
 * Taylor's Theorem. Let k be an interger and let ![](http://latex.codecogs.com/gif.latex?f(x)) be k times differentiable at the point x=a, then there exists a function ![](http://latex.codecogs.com/gif.latex?R_k(x))such that:<br>
 ![](http://latex.codecogs.com/gif.latex?f%28x%29%3Df%28a%29&plus;f%27%28a%29%28x-a%29&plus;%5Cfrac%7Bf%27%27%28a%29%28x-a%29%5E2%7D%7B2%21%7D&plus;...&plus;%5Cfrac%7Bf%5E%7B%28k%29%7D%28a%29%28x-a%29%5Ek%7D%7Bk%21%7D&plus;R_k%28x%29)<br>
@@ -35,8 +37,10 @@ Therefore the differece between the first order approxiamtion and the real solut
 ![](http://latex.codecogs.com/gif.latex?f%28x%29-P_1%28x%29%3D%5Cfrac%7Bf%27%27%28%5Cxi%20%29%7D%7B2%21%7D%28x-a%29%5E2)<br>
 where f(x)is the exact solution and ![](http://latex.codecogs.com/gif.latex?P_1%28x%29%3Df%28a%29&plus;%7Bf%27%28a%20%29%7D%28x-a%29) is the solution found through the Euler Method with ![]( http://latex.codecogs.com/gif.latex?e%3D%5Cfrac%7Bf%27%27%28%5Cxi%20%29%7D%7B2%21%7D%28x-a%29%5E2) being the error between them. Therefore an apporoxiamtion can be made:<br>
 ![](http://latex.codecogs.com/gif.latex?e%5Cleqslant%20%5Cleft%20%7C%20%5Cfrac%7Bf%27%27%28%5Cxi%20%29%7D%7B2%21%7D%28x-a%29%5E2%20%5Cright%20%7C%5Cleqslant%20%5Cfrac%7BM%7D%7B2%21%7D%28dx%29%5E2)<br>
-where ![](http://latex.codecogs.com/gif.latex?M%3Dmax%5Cleft%20%7C%20f%27%27%28%5Cxi%20%29%20%5Cright%20%7C) and ![](http://latex.codecogs.com/gif.latex?dx) is the step length.
+where ![](http://latex.codecogs.com/gif.latex?M%3Dmax%5Cleft%20%7C%20f%27%27%28%5Cxi%20%29%20%5Cright%20%7C) and ![](http://latex.codecogs.com/gif.latex?dx) is the step length.<br>
+Therefore, it is easy to see that two factors contribute to the errors result from Euler Method, which are step length and the value of the function's second derivetive. The second derivaive illustrates how rapidly a function change; if a function changes rapidly, the using tangent lines at each point as an approximation can result in a large error.
 
+## Result
 
 
 
