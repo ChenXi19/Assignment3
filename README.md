@@ -4,4 +4,4 @@ Numerical method has been widely used as an approximation of the exact solution 
 ## Introduction
 The method normally used to estimate the difference between the real solution and the Euler solution is generally based on the Taylor's Theorem and the Meanvalue Theorem, which are<br>
 * The Taylor's Theorem. Let k be an interger and let f(x) be k times differentiable at the point x=a, then there exists a function h(x) such that:<br>
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+\\x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
