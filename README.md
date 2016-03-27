@@ -79,9 +79,10 @@ with the error being<br>
 ![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction1000.png)<br>
 with the error being<br>
 ![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction1000error.png)
+To view code please click here [free falling problem](https://github.com/ChenXi19/Assignment3/blob/master/plot%20of%20free%20falling%20problem.py) and [frictional force problem](https://github.com/ChenXi19/Assignment3/blob/master/friction%20force%20problem.py)
 
 ## Reference and Acknowledgement 
-
+In finishing this assignment, I would like to express my gratitude to my classmate [CaoYi](https://github.com/breakingDboy) who helped me with coding and taught me how to write them step by step. Furthermore, I also want to thank Wikipedia, the free encyclopedia for information on Taylor's Theorem.
 
 
 
