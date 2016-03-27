@@ -10,9 +10,11 @@ and ![](http://latex.codecogs.com/gif.latex?%5Clim_%7Bx%5Crightarrow%20a%7DR_k%2
 ![](http://latex.codecogs.com/gif.latex?R_k%28x%29%3D%5Cfrac%7Bf%5E%7B%28k&plus;1%29%7D%28%5Cxi%20%29%7D%7B%28k&plus;1%29%21%7D%28x-a%29%5E%7Bk&plus;1%7D)<br>where![](http://latex.codecogs.com/gif.latex?%5Cxi) is between x and a.
 
 
-To estimate how well it can determine the errors resulting from Euler Methods, a comparison is made in this assignment between what is got directly from substraction between the exact solutin and the Eural solution and the the value got from applying Taylor's theorem.
+To estimate how well Euler solution approaches the real solution, a comparison between the Euler solution and the exact solution is made in this assignment.
 
 To display how step legth influence the difference, several runs of the same equation are made with respect to different step length.
+
+To show how the function itself can affect the accuracy, a comparison was made between problem 1 and problem 3.
 
 ## Methods 
 ### Numerical Methods
@@ -41,9 +43,44 @@ where ![](http://latex.codecogs.com/gif.latex?M%3Dmax%5Cleft%20%7C%20f%27%27%28%
 Therefore, it is easy to see that two factors contribute to the errors result from Euler Method, which are step length and the value of the function's second derivetive. The second derivaive illustrates how rapidly a function change; if a function changes rapidly, the using tangent lines at each point as an approximation can result in a large error.
 
 ## Result
+### Accuracy of the Euler solution
+#### Problem 1: the free falling problem
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/free%20falling10.png)<br>
+The error is estimated by substracting the Euler solution and the real solution and taking the maximum of the absolute value, which is <br>
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/Free10%20error.png)<br>
+The error is almost zero but not exact zero, which is what we expected. And the non zero error can be explained by omission made during compuitation.
 
+#### Problem 3: frictional force problem
+The two solutions get from different methods are,
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction100.png)<br>
+where the interval is divided into 100 parts.<br>
+The error is estimated by substracting the Euler solution and the real solution and taking the maximum of the absolute value, which is <br>
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction100error.png)<br>
+Although it is not zero, it is still small enough to guarantee the accuracy of Eulor solution.
 
+When we took the step length smaller by dividing the interval into 1000 parts, the error became even smaller.<br>
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction1000.png)<br>
+with the error being<br>
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction1000error.png)
 
+### How step length affects errors 
+Since the Euler solution is the exact solution of problem 1, only problem 3 will be discussed in this part. Define N as the number of times the interval is divided to indicate different step length.
+#### case 1: N=10
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction10.png)<br>
+with the error being<br>
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/fricton10%20error.png)
+
+#### case 2: N=100
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction100.png)
+with the error being<br>
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction100error.png)<br>
+
+#### case 3: N=1000
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction1000.png)<br>
+with the error being<br>
+![](https://raw.githubusercontent.com/ChenXi19/Assignment3/master/friction1000error.png)
+
+## Reference and Acknowledgement 
 
 
 
