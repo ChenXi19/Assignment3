@@ -24,9 +24,9 @@ and ![](http://latex.codecogs.com/gif.latex?%5Clim_%7Bx%5Crightarrow%20a%7DR_k%2
 
 Therefore the differece between the first order approxiamtion and the real solution will be:<br>
 ![](http://latex.codecogs.com/gif.latex?f%28x%29-P_1%28x%29%3D%5Cfrac%7Bf%27%27%28%5Cxi%20%29%7D%7B2%21%7D%28x-a%29%5E2)<br>
-where f(x)is the exact solution and ![](http://latex.codecogs.com/gif.latex?P_1%28x%29%3Df%28a%29&plus;%7Bf%27%28a%20%29%7D%28x-a%29) is the solution found through the Euler Method with ![]( http://latex.codecogs.com/gif.latex?e%3D%5Cfrac%7Bf%27%27%28%5Cxi%20%29%7D%7B2%21%7D%28x-a%29%5E2) being the error between them.
-
-
+where f(x)is the exact solution and ![](http://latex.codecogs.com/gif.latex?P_1%28x%29%3Df%28a%29&plus;%7Bf%27%28a%20%29%7D%28x-a%29) is the solution found through the Euler Method with ![]( http://latex.codecogs.com/gif.latex?e%3D%5Cfrac%7Bf%27%27%28%5Cxi%20%29%7D%7B2%21%7D%28x-a%29%5E2) being the error between them. Therefore an apporoxiamtion can be made:<br>
+![](http://latex.codecogs.com/gif.latex?e%5Cleqslant%20%5Cleft%20%7C%20%5Cfrac%7Bf%27%27%28%5Cxi%20%29%7D%7B2%21%7D%28x-a%29%5E2%20%5Cright%20%7C%5Cleqslant%20%5Cfrac%7BM%7D%7B2%21%7D%28dx%29%5E2)<br>
+where ![](http://latex.codecogs.com/gif.latex?M%3Dmax%28f%27%27%28%5Cxi%20%29%29) and ![](http://latex.codecogs.com/gif.latex?dx) is the step length.
 
 
 
